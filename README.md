@@ -5,7 +5,7 @@ WordPress plugin for handling devices registration and sending push notification
 ## Building
 Before using the plugin build the actual sender component (`push-notif-sender`, you'll need Go SDK):
 
-`go build push-notif-sender`
+`go build push-notif-sender.go`
 
 ## Installation
 
@@ -25,11 +25,11 @@ POST `http://www.example.com/?rest_route=/pn4p/v1/token`
 
 Parameters:
 
-| Parameter	| Value			|
-|---------------|-----------------------|
-| token		| Device token		|
-| platform	| `ios` or `android`	|
-| device	| Device Name		|
+| Parameter	| Value				|
+|---------------|-------------------------------|
+| token		| Device token			|
+| platform	| `ios` or `android`		|
+| device	| Device Name, e.g. Galay S8	|
 
 Successful registration response:
 ```
@@ -70,9 +70,9 @@ Push notification delivered to a device will have payload like this:
 
 ## Usage (Plugin UI)
 
-`Settings` tab exposes plugin settings.
-`Registrations` tab shows list of registrations.
-`Log` tab shows message log from `push-notif-sender` binary after post is created or updated.
+- `Settings` tab exposes plugin settings.
+- `Registrations` tab shows list of registrations.
+- `Log` tab shows message log from `push-notif-sender` binary after post is created or updated.
 
 When creating or editing post, check `Send Push Notification` option in the `Publish` WordPress menu if you want to send push notifications for that post. Note that failed deliveries of push notifications to certain devices (e.g. due to expired token) will remove that devices from registrations untill devices register again.
 

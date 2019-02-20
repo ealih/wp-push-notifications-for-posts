@@ -25,11 +25,11 @@ POST `http://www.example.com/?rest_route=/pn4p/v1/token`
 
 Parameters:
 
-| Parameter	| Value			|
-|---------------|-----------------------|
-| token		| Device token		|
-| platform	| `ios` or `android`	|
-| device	| Device Name		|
+| Parameter	| Value				|
+|---------------|-------------------------------|
+| token		| Device token			|
+| platform	| `ios` or `android`		|
+| device	| Device Name, e.g. Galay S8	|
 
 Successful registration response:
 ```

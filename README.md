@@ -5,7 +5,7 @@ WordPress plugin for handling devices registration and sending push notification
 ## Building
 Before using the plugin build the actual sender component (`push-notif-sender`, you'll need Go SDK):
 
-`go build push-notif-sender`
+`go build push-notif-sender.go`
 
 ## Installation
 

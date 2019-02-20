@@ -34,22 +34,22 @@ Parameters:
 Successful registration response:
 ```
 {
-    "success": true,
-    "message": "Token registration successful"
+	"success": true,
+	"message": "Token registration successful"
 }
 ```
 Error response:
 
 ```
 {
-    "code": "rest_invalid_param",
-    "message": "Invalid parameter(s): platform",
-    "data": {
-        "status": 400,
-        "params": {
-            "platform": "Invalid parameter."
-        }
-    }
+	"code": "rest_invalid_param",
+	"message": "Invalid parameter(s): platform",
+	"data": {
+		"status": 400,
+		"params": {
+			"platform": "Invalid parameter."
+		}
+	}
 }
 ```
 
@@ -74,6 +74,6 @@ Push notification delivered to a device will have payload like this:
 - `Registrations` tab shows list of registrations.
 - `Log` tab shows message log from `push-notif-sender` binary after post is created or updated.
 
-When creating or editing post, check `Send Push Notification` option in the `Publish` WordPress menu if you want to send push notifications for that post. Note that failed deliveries of push notifications to certain devices (e.g. due to expired token) will remove that devices from registrations untill devices register again.
+When creating or editing post, check `Send Push Notifications` option in the `Publish` WordPress menu if you want to send push notifications for that post. Note that failed deliveries of push notifications to certain devices (e.g. due to expired token) will remove that devices from registrations untill devices register again.
 
  

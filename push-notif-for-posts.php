@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name:  Push Notifications For Posts
-Plugin URI:   https://developer.wordpress.org/plugins/the-basics/
+Plugin URI:   https://github.com/ealih/wp-push-notifications-for-posts
 Description:  Push Notifications For Posts (pn4p)
 Version:      1
 Author:       esed.alih@gmail.com
-Author URI:   https://developer.wordpress.org/
+Author URI:   https://esed.io
 License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  pn4p
@@ -90,7 +90,7 @@ function pn4p_createCustomField() {
     ?>
 
     <div class="misc-pub-section misc-pub-section-last">
-        <label><input type="checkbox" value="1" <?php checked($value, true, true); ?> name="_pn4p_push" /><?php _e('Send Push Notification'); ?></label>
+        <label><input type="checkbox" value="1" <?php checked($value, true, true); ?> name="_pn4p_push" /><?php _e('Send Push Notifications'); ?></label>
     </div>
     <?php
 }
